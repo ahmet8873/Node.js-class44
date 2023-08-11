@@ -1,6 +1,7 @@
 {
   "name": "1-blog-api",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "server.js",
   "scripts": {
