@@ -5,7 +5,7 @@ import fs from "fs";
 import { fileURLToPath } from "url";
 import path from "path";
 
-const app = express();
+export const app = express();
 
 const port = 3000;
 
@@ -17,6 +17,7 @@ app.post("/blogs", (req, res) => {
   if (!title || !content) {
     res.status(400).json({ error: "Title and content are required." });
     return;
+    // we dont need return
   }
 
   try {
